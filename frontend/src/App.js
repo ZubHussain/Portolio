@@ -293,7 +293,7 @@ export default function Portfolio() {
     setSending(true);
 
     try {
-      await axios.post("portolio-ykhd.vercel.app/api/contact", form);
+      await axios.post("https://portolio-ykhd.vercel.app/api/contact", form);
 
       showToast("✅ Message sent successfully!");
       setForm({ name: "", email: "", message: "" });
