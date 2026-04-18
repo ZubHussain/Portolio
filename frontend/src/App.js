@@ -446,8 +446,29 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="proj-links">
-                    <a href={p.link} className="proj-link live" onClick={e=>{e.preventDefault();showToast("Live demo coming soon!")}}>Live Demo ↗</a>
-                    <a href={p.github} className="proj-link gh" target="_blank" rel="noopener noreferrer">GitHub</a>
+                          <a
+                            href={p.link}
+                            className="proj-link live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => {
+                              if (!p.link || p.link === "#") {
+                                e.preventDefault();
+                                showToast("Live demo coming soon!");
+                              }
+                            }}
+                          >
+                            Live Demo ↗
+                          </a>
+
+                          <a
+                            href={p.github}
+                            className="proj-link gh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            GitHub
+                          </a>
                   </div>
                 </div>
               </div>
