@@ -35,7 +35,7 @@ const PROJECTS = [
     color:"#7C3AED",
     accent:"#A78BFA",
     bg:"linear-gradient(135deg,#1e1b4b,#312e81)",
-    link:"#", github:"https://github.com/ZubHussain/MultiMind-AI"
+    link:"https://multimind-ai-1-frontend.onrender.com/", github:"https://github.com/ZubHussain/MultiMind-AI"
   },
   {
     title:"Social Media Dashboard",
