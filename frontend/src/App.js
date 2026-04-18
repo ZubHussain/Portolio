@@ -2,17 +2,29 @@ import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 const NAV = ["Home","About","Skills","Projects","Contact"];
 
-const SKILLS = [
-  { name:"MongoDB", icon:"🍃", level:90, color:"#4DB33D" },
-  { name:"Express.js", icon:"⚙️", level:85, color:"#000000" },
-  { name:"React", icon:"⚛️", level:95, color:"#61DAFB" },
-  { name:"Node.js", icon:"🟢", level:88, color:"#68A063" },
-  { name:"JavaScript", icon:"🟨", level:80, color:"#3178C6" },
-  { name:"Git & GitHub", icon:"🔧", level:92, color:"#06B6D4" },
-  { name:"Java", icon:"☕", level:90, color:"#E10098" },
-  { name:"Docker", icon:"🐋", level:70, color:"#2496ED" },            
-  { name:"SQL", icon:"🐋", level:85, color:"#2496ED" },            
-  { name:"AWS", icon:"☁️", level:65, color:"#2496ED" },            
+const skills = [
+  { name:"MongoDB", icon:"🍃", level:88, color:"#4DB33D" },
+  { name:"Express.js", icon:"⚡", level:83, color:"#353535" },
+  { name:"React", icon:"⚛️", level:92, color:"#61DAFB" },
+  { name:"Node.js", icon:"🟢", level:87, color:"#68A063" },
+  { name:"JavaScript", icon:"🟨", level:88, color:"#F7DF1E" },
+  { name:"Git & GitHub", icon:"🐙", level:90, color:"#F05032" },
+  { name:"Java", icon:"☕", level:85, color:"#ED8B00" },
+  { name:"Docker", icon:"🐳", level:68, color:"#2496ED" },
+  { name:"SQL", icon:"🗄️", level:82, color:"#4479A1" },
+  { name:"Kubernetes", icon:"🎡", level:55, color:"#326CE5" },
+  { name:"Next.js", icon:"▲", level:70, color:"#000000" },
+  { name:"Jenkins", icon:"🔧", level:60, color:"#D33833" },
+  { name:"Spring Boot", icon:"🌱", level:75, color:"#6DB33F" },
+  { name:"Hibernate", icon:"🗃️", level:70, color:"#BCAE79" },
+  { name:"HQL", icon:"🔍", level:75, color:"#59666C" },
+  { name:"JPA", icon:"🔗", level:78, color:"#6E4C9E" },
+  { name:"JDBC", icon:"🔌", level:80, color:"#007396" },
+  { name:"REST APIs", icon:"🌐", level:90, color:"#00A896" },
+  { name:"Data Structures & Algorithms", icon:"🧩", level:90, color:"#F4A261" },
+  { name:"Postman", icon:"📮", level:95, color:"#FF6C37" },
+  { name:"DevOps", icon:"♾️", level:60, color:"#0078D7" },
+  { name:"Linux", icon:"🐧", level:72, color:"#FCC624" },
 ];
 
 const PROJECTS = [
