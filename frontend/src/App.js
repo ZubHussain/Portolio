@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 const NAV = ["Home","About","Skills","Projects","Contact"];
 
-const skills = [
+const SKILLS = [
   { name:"MongoDB", icon:"🍃", level:88, color:"#4DB33D" },
   { name:"Express.js", icon:"⚡", level:83, color:"#353535" },
   { name:"React", icon:"⚛️", level:92, color:"#61DAFB" },
